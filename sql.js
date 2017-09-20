@@ -1,0 +1,2 @@
+// Task 6
+// SELECT Employee.firstName, Employee.lastName, Invoice.InvoiceId FROM Employee JOIN Customer ON Customer.SupportRepId = Employee.EmployeeId JOIN Invoice ON Invoice.CustomerId = Customer.CustomerId WHERE Employee.EmployeeId = Customer.SupportRepId
