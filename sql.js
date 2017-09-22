@@ -22,3 +22,13 @@
 // 9. Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
 
 // SELECT COUNT(InvoiceId) as Count, InvoiceId FROM InvoiceLine WHERE InvoiceLine.InvoiceId = 37
+
+// 18. Which sales agent made the most in sales in 2009? Margaret
+
+// SELECT COUNT(Customer.CustomerId), Employee.FirstName FROM Customer
+// JOIN Invoice ON Invoice.CustomerId = Customer.CustomerId
+// JOIN Employee ON Employee.EmployeeId = Customer.SupportRepId
+// WHERE Invoice.InvoiceDate LIKE "2009%"
+// GROUP BY Customer.SupportRepId
+
+// 19. Which sales agent made the most in sales in 2010?
